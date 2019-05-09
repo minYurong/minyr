@@ -2,9 +2,12 @@
   "name": "minyr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "webpack --mode production",
+    "build": "webpack -w --progress --display-reasons --colors",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/minYurong/minyr/issues"
   },
-  "homepage": "https://github.com/minYurong/minyr#readme"
+  "homepage": "https://github.com/minYurong/minyr#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^2.0.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
 }
