@@ -34,7 +34,15 @@ module.exports = {
       {
         test: /\.(css|scss|less)$/,
         use: ExtractTextPlugin.extract({
-          fallback:'style-loader?singleton',
+          fallback: [
+            {
+              loader: 'style-loader',
+              options: {
+                singleton: true,
+                transform: './css.transform.js'
+              }
+            }
+          ],
           use: [
             'css-loader?modules=false&localIdentName=[path][name]-[local]-[hash:5]',
             'postcss-loader',
