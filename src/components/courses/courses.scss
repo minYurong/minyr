@@ -1,0 +1,15 @@
+:root{
+  --fontSize: 14px;
+}
+
+body{
+  font-size: var(--fontSize);
+}
+.courses-wrap .list{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.courses-wrap .list-item{
+  width: 210px;
+}
