@@ -1,9 +1,11 @@
+@import url('../../assets/css/global.scss');
 :root{
   --fontSize: 14px;
 }
 
 body{
   font-size: var(--fontSize);
+  background: url('../../assets/images/bg.jpg') no-repeat 50% 50%/100% 100% fixed;
 }
 .courses-wrap .list{
   display: flex;

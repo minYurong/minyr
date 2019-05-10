@@ -113,7 +113,7 @@ Object.defineProperty(exports, "__esModule", {
 
 __webpack_require__(2);
 
-var _courses = __webpack_require__(7);
+var _courses = __webpack_require__(8);
 
 var _courses2 = _interopRequireDefault(_courses);
 
@@ -138,10 +138,17 @@ exports.default = Courses;
 /* 4 */,
 /* 5 */,
 /* 6 */,
-/* 7 */
-/***/ (function(module, exports) {
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<div class=\"layer\">\r\n  <div class=\"courses-wrap\">\r\n    <ul class=\"list\">\r\n      <li class=\"list-item\">\r\n        <a href=\"\" class=\"list-lk\">\r\n          <div class=\"list-img\"></div>\r\n        </a>\r\n        <div class=\"list-info\">\r\n          <div class=\"list-tt\">呵呵呵哒</div>\r\n          <div class=\"list-subtt\"></div>\r\n          <div class=\"list-more\"></div>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</div>";
+module.exports = "<div class=\"layer\">\r\n  <div class=\"courses-wrap\">\r\n    <ul class=\"list\">\r\n      <li class=\"list-item\">\r\n        <a href=\"\" class=\"list-lk\">\r\n          <div class=\"list-img\">\r\n            <img src=\"" + __webpack_require__(9) + "\" alt=\"\">\r\n          </div>\r\n        </a>\r\n        <div class=\"list-info\">\r\n          <div class=\"list-tt\">呵呵呵哒</div>\r\n          <div class=\"list-subtt\"></div>\r\n          <div class=\"list-more\"></div>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</div>";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/images/1.jpg";
 
 /***/ })
 /******/ ]);
