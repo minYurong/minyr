@@ -53,16 +53,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/,
-        use:[
-          {
-            loader: 'url-loader',
-            options: {
-              name: '[name].[ext]',
-              limit: 8192,
-              outputPath: 'assets/images'
-            }
-          }
-        ],
+        use:'url-loader?name=[name].[ext]&limit=8192&outputPath=assets/images',
         exclude: /node_modules/
       }
     ]
