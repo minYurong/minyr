@@ -48,13 +48,18 @@ module.exports = {
             'postcss-loader',
             'sass-loader'
           ]
-        }),
-        exclude: /node_modules/
+        })
       },
       {
         test: /\.(png|jpe?g|gif)$/,
         use:'url-loader?name=[name].[ext]&limit=8192&outputPath=assets/images',
         exclude: /node_modules/
+      },
+      {
+        test: /[\w-]+\.(?:eot|svg|ttf|woff2?)$/,
+        use: [
+          'file-loader?name=[name].[ext]&outputPath=fonts'
+        ]
       }
     ]
   },
